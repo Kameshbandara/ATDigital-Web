@@ -17,13 +17,13 @@ function Header() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5 }}
           viewport={{ once: true }}
-          className='hidden lg:block absolute bottom-8 left-8 max-w-md'
+          className='hidden lg:block absolute bottom-8 left-15 max-w-lg'
         >
-          <div className='bg-gradient-to-r from-green-400 to-blue-500 p-8 rounded-lg shadow-xl'>
+          <div className='bg-gradient-to-r from-green-400 to-[#1CBDDD] p-8 shadow-xl'>
             <h2 className='text-white text-3xl xl:text-4xl font-bold leading-tight mb-6'>
-              We Crush Your Competitors, Goals, And Sales Records - Without The B.S.
+              We Crush Your <br /> Competitors, Goals, And Sales Records - Without The B.S.
             </h2>
-            <button className='bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded transition-colors duration-300'>
+            <button className='text-white font-semibold px-6 py-3 transition-colors duration-300 w-full sm:w-auto' style={{backgroundColor: '#F28D35'}}>
               GET FREE CONSULTATION
             </button>
           </div>
@@ -37,11 +37,11 @@ function Header() {
           viewport={{ once: true }}
           className='lg:hidden absolute -bottom-20 left-4 right-4 z-10'
         >
-          <div className='bg-gradient-to-r from-green-400 to-blue-500 p-6 rounded-lg shadow-xl mx-auto max-w-lg'>
+          <div className='bg-gradient-to-r from-green-400 to-[#1CBDDD] p-6 shadow-xl mx-auto max-w-lg'>
             <h2 className='text-white text-2xl sm:text-3xl font-bold leading-tight mb-4'>
               We Crush Your Competitors, Goals, And Sales Records - Without The B.S.
             </h2>
-            <button className='bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded transition-colors duration-300 w-full sm:w-auto'>
+            <button className='text-white font-semibold px-6 py-3 transition-colors duration-300 w-full sm:w-auto' style={{backgroundColor: '#F28D35'}}>
               GET FREE CONSULTATION
             </button>
           </div>
