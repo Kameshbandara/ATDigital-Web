@@ -18,12 +18,12 @@ export default function Services() {
       </div>
 
       {/* Content on right side */}
-      <div className='flex-1 flex flex-col items-start'>
-        <h2 className='text-[#6A44F2] text-2xl md:text-3xl font-semibold mb-6'>
+      <div className='flex-1 flex flex-col items-center lg:items-start'>
+        <h2 className='text-[#6A44F2] text-2xl md:text-3xl font-semibold mb-6 text-center lg:text-left'>
           Web & Mobile App Development
         </h2>
         
-        <p className='text-gray-700 text-base leading-relaxed mb-8'>
+        <p className='text-gray-700 text-base leading-relaxed mb-8 text-center lg:text-left'>
           Your web and mobile Apps are pieces of the puzzle to grow your <br/> business. We use frameworks which tailor content and engagement<br/> methods to respond to different intents shown by your potential <br/> customers who interact with your business online.
         </p>
         
