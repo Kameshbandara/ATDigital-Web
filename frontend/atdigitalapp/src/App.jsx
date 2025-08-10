@@ -1,10 +1,8 @@
 import './App.css';
-//import About from './components/About';
-//import Contact from './components/Contact';
+import Digital from './components/Digital';
 import Footer from './components/Footer';
 import Header from './components/Header';
-//import Projects from './components/Projects';
-//import Testimonials from './components/Testimonials';
+import Services from './components/Services';
 
 
 
@@ -14,14 +12,9 @@ function App() {
   return (
     <>
     <div className='w-full overflow-hidden'>
-      {/* <ToastContainer/> */}
       <Header/>
-      {/* <About/> */}
-      {/*<Projects/>*/}
-      {/* <Testimonials/> */}
-      {/* <Contact/> */}
-      {/*<Testimonials/>*/}
-      {/* <Contact/> */}
+      <Services/>
+      <Digital/>
       <Footer/>     
     </div>     
      
