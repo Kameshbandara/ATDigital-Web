@@ -2,31 +2,51 @@ import { motion } from "framer-motion"
 import { assets } from '../assets/assets'
 import Navbar from './Navbar'
 
-
-
 function Header() {
   return (
-    <div 
-      className='min-h-screen mb-4 bg-cover bg-center flex items-center w-full overflow-hidden' 
-      style={{ backgroundImage: `url(${assets.header})` }}
-    >
-
+    <div className='min-h-screen mb-4 bg-cover bg-center flex flex-col w-full overflow-hidden relative' 
+         style={{ backgroundImage: `url(${assets.header})` }}>
+      
       <Navbar />
-      <motion.div
       
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.5 }}
-        viewport={{ once: true }}
-
-        className='container mx-auto text-white text-center py-4 px-6 md:px-20 lg:px-32'>
-        <h2 className='text-5xl sm:text-6xl md:text-[78px] inline-block max-w-3xl font-semibold pt-20 '>Explore Homes That Fit Your Dreams</h2>
-      
-          <div className='space-x-6 mt-16'>
-            <a href='#Projects' className='border border-white px-8 py-3 rounded'>Projects</a>
-            <a href='#Contact' className='bg-blue-600 px-8 py-3 rounded'>Contact Us</a>
+      {/* Main content container */}
+      <div className='flex-1 relative'>
+        {/* Desktop: Box positioned at bottom left with gaps */}
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.5 }}
+          viewport={{ once: true }}
+          className='hidden lg:block absolute bottom-8 left-8 max-w-md'
+        >
+          <div className='bg-gradient-to-r from-green-400 to-blue-500 p-8 rounded-lg shadow-xl'>
+            <h2 className='text-white text-3xl xl:text-4xl font-bold leading-tight mb-6'>
+              We Crush Your Competitors, Goals, And Sales Records - Without The B.S.
+            </h2>
+            <button className='bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded transition-colors duration-300'>
+              GET FREE CONSULTATION
+            </button>
           </div>
-      </motion.div>
+        </motion.div>
+
+        {/* Mobile/Tablet*/}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.5 }}
+          viewport={{ once: true }}
+          className='lg:hidden absolute -bottom-20 left-4 right-4 z-10'
+        >
+          <div className='bg-gradient-to-r from-green-400 to-blue-500 p-6 rounded-lg shadow-xl mx-auto max-w-lg'>
+            <h2 className='text-white text-2xl sm:text-3xl font-bold leading-tight mb-4'>
+              We Crush Your Competitors, Goals, And Sales Records - Without The B.S.
+            </h2>
+            <button className='bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded transition-colors duration-300 w-full sm:w-auto'>
+              GET FREE CONSULTATION
+            </button>
+          </div>
+        </motion.div>
+      </div>
     </div>
   )
 }
