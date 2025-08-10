@@ -4,7 +4,7 @@ import Navbar from './Navbar'
 
 function Header() {
   return (
-    <div className='min-h-screen mb-4 bg-cover bg-center flex flex-col w-full overflow-hidden relative' 
+    <div className='min-h-screen mb-32 bg-cover bg-center flex flex-col w-full overflow-hidden relative' 
          style={{ backgroundImage: `url(${assets.header})` }}>
       
       <Navbar />
@@ -35,9 +35,9 @@ function Header() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5 }}
           viewport={{ once: true }}
-          className='lg:hidden absolute -bottom-20 left-4 right-4 z-10'
+          className='lg:hidden absolute -bottom-6 left-0 right-0 z-10'
         >
-          <div className='bg-gradient-to-r from-green-400 to-[#1CBDDD] p-6 pr-12 shadow-xl mx-auto max-w-xl'>
+          <div className='bg-gradient-to-r from-green-400 to-[#1CBDDD] p-6 pb-8 shadow-xl w-full'>
             <h2 className='text-white text-2xl sm:text-3xl font-bold leading-tight mb-4' style={{width: 'fit-content'}}>
               We Crush Your Competitors, Goals, And Sales Records - Without The B.S.
             </h2>
